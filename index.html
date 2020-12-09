@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JK Restaurant</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            /* background-color: blanchedalmond; */
+        }
+        
+        .navbar a {
+            color: white;
+        }
+        .nav-item {
+            padding: 0px 15px;
+        }
+        .banner {
+            position: relative;
+            text-align: center;
+            color: white;
+            width: 100%;
+            height: 650px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .banner img {
+            height: inherit;
+            width: 100%;
+        }
+        
+        .another-layer {
+            position: absolute;
+            font-family: 'Lora', serif;
+            /* font-family: 'Playfair Display', serif; */
+            /* font-family: "Ubuntu", sans-serif; */
+            top: 10%;
+            text-align: center;
+            left: 0px;
+            width: 100%;
+            height: 90%;
+            /* height: 700px; */
+            color: white;
+        }
+        
+        #explore-btn {
+            position: absolute;
+            width: 180px;
+            z-index: 4;
+            bottom: 10%;
+            left: 42%;
+            right: 45%;
+            background-color: green;
+            color: white;
+            border-radius: 20px;
+            border: 2px solid white;
+            /* color:white; */
+        }
+        
+        #explore-btn:hover {
+            background-color: #cc4c25;
+            color: white;
+            border: 2px solid #ece8e6;
+        }
+        
+       
+    </style>
+
+</head>
+
+
+<body>
+
+
+
+    <!--Navbar-->
+    <nav class="navbar  navbar-expand-lg" style="color:white;background-color: #000000;">
+        <div class="container">
+            <!-- Navbar brand -->
+            <h3>JK Restaurant</h3>
+            <a class="navbar-brand" href="#"><span class="navbar-toggler-icon " style="color: white;"></span></a>
+
+
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home
+          <span class="sr-only">(current)</span>
+        </a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="./category.html">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+
+                </ul>
+                <!-- Links -->
+                <form class="form-inline">
+                    <div class="md-form my-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Collapsible content -->
+    </nav>
+    <!--/.Navbar-->
+
+
+
+
+    <div class="banner">
+        <img src="./hero_bg.jpg" alt="">
+        <!-- <div style="position:absolute;top:0;left:0;width:100%;height:100%;background-color: rgba(0,0,0,0.4);"></div> -->
+
+        <div class="another-layer">
+            <h2 class="display-3">
+                Enjoy Your Healthy Delicious Food </h2>
+
+
+        </div>
+        <a class="btn btn-lg" href="#" id="explore-btn">Explore More</a>
+
+    </div>
+    <div class="container-fluid">
+    </div>
+
+    <style>
+        .item-rating li {
+            display: inline-block;
+        }
+        
+        .item-rating {
+            margin-bottom: 10px;
+        }
+        
+        .entry-meta li {
+            display: inline-block;
+            font-size: 15px;
+        }
+        
+        ul {
+            list-style: outside none none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .item-content {
+            text-align: center;
+        }
+        
+        .entry-meta li a i {
+            margin-right: 10px;
+            color: #ff4a52;
+            font-size: 14px;
+        }
+        
+        .star-fill i {
+            color: #ffb300;
+        }
+        
+        .star-empty i {
+            color: #ddd9ce;
+        }
+        
+        .entry-meta li a {
+            color: #909090;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+        
+        .entry-meta span {
+            color: #000000;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .sub-title {
+            color: #ff4a52;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .card-title {
+            font-family: 'Lora', serif;
+        }
+        /* Rotate */
+        
+        .card-deck figure img {
+            -webkit-transform: rotate(15deg) scale(1.4);
+            transform: rotate(15deg) scale(1.4);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+        
+        figure {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            overflow: hidden;
+        }
+        
+        .card-deck figure:hover img {
+            -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+        }
+    </style>
+    <style>
+        .section-heading {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            position: relative;
+            border-bottom: 1px solid #d7d7d7;
+        }
+        
+        .section-heading::before {
+            position: absolute;
+            content: "";
+            bottom: -2px;
+            left: 0;
+            background-color: #ff4a52;
+            height: 3px;
+            width: 150px;
+        }
+    </style>
+    <section class="pt-3 pb-3">
+        <div class="container">
+            <div class="card-deck">
+                <div class=" d-flex card justify-content-center">
+                    <figure>
+                        <img class="card-img-top" src="https://radiustheme.com/demo/html/ranna/ranna/img/product/product1.jpg" alt="Card image cap">
+                    </figure>
+                    <div class="card-body">
+                        <p class="card-text sub-title text-center">BREAKFAST</p>
+
+                        <h5 class="card-title text-center">Tomatoes Stuffed with Foie and Chanterelles.</h5>
+                        <ul class="item-rating text-center">
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-empty"><i class="fas fa-star"></i></li>
+                            <li><span>9<span> / 10</span></span>
+                            </li>
+                        </ul>
+                        <ul class="entry-meta text-center">
+                            <li><a href="#"><i class="fas fa-clock"></i>15 Mins</a></li>
+                            <li><a href="#"><i class="fas fa-user"></i>by <span>John Martin</span></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i><span>02</span> Likes</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <figure>
+                        <img class="card-img-top" src="https://radiustheme.com/demo/html/ranna/ranna/img/product/product2.jpg" alt="Card image cap">
+
+                    </figure>
+                    <div class="card-body">
+                        <p class="card-text sub-title text-center">DESERT</p>
+
+                        <h5 class="card-title text-center">Pumpkin Cheesecake With GingersnapCrust.</h5>
+                        <ul class="item-rating text-center">
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-empty"><i class="fas fa-star"></i></li>
+                            <li><span>9<span> / 10</span></span>
+                            </li>
+                        </ul>
+                        <ul class="entry-meta text-center">
+                            <li><a href="#"><i class="fas fa-clock"></i>15 Mins</a></li>
+                            <li><a href="#"><i class="fas fa-user"></i>by <span>John Martin</span></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i><span>02</span> Likes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img class="card-img-top" src="https://radiustheme.com/demo/html/ranna/ranna/img/product/product3.jpg" alt="Card image cap">
+                    </figure>
+                    <div class="card-body">
+                        <p class="card-text sub-title text-center">JUICE</p>
+
+                        <h5 class="card-title text-center">Blueberry Juice with Lemon Crema.</h5>
+                        <ul class="item-rating text-center">
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-empty"><i class="fas fa-star"></i></li>
+                            <li><span>9<span> / 10</span></span>
+                            </li>
+                        </ul>
+                        <ul class="entry-meta text-center">
+                            <li><a href="#"><i class="fas fa-clock"></i>15 Mins</a></li>
+                            <li><a href="#"><i class="fas fa-user"></i>by <span>John Martin</span></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i><span>02</span> Likes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="pt-3 pb-3">
+
+        <div class="container">
+            
+            <div class="section-heading heading-dark">
+                <h2 class="item-heading">TRENDING RECIPES</h2>
+            </div>
+            <div class="card-deck">
+                <div class=" d-flex card justify-content-center">
+                    <figure>
+                        <img class="card-img-top" src="https://radiustheme.com/demo/html/ranna/ranna/img/product/product1.jpg" alt="Card image cap">
+                    </figure>
+                    <div class="card-body">
+                        <p class="card-text sub-title text-center">BREAKFAST</p>
+
+                        <h5 class="card-title text-center">Tomatoes Stuffed with Foie and Chanterelles.</h5>
+                        <ul class="item-rating text-center">
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-empty"><i class="fas fa-star"></i></li>
+                            <li><span>9<span> / 10</span></span>
+                            </li>
+                        </ul>
+                        <ul class="entry-meta text-center">
+                            <li><a href="#"><i class="fas fa-clock"></i>15 Mins</a></li>
+                            <li><a href="#"><i class="fas fa-user"></i>by <span>John Martin</span></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i><span>02</span> Likes</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <figure>
+                        <img class="card-img-top" src="https://radiustheme.com/demo/html/ranna/ranna/img/product/product2.jpg" alt="Card image cap">
+
+                    </figure>
+                    <div class="card-body">
+                        <p class="card-text sub-title text-center">DESERT</p>
+
+                        <h5 class="card-title text-center">Pumpkin Cheesecake With GingersnapCrust.</h5>
+                        <ul class="item-rating text-center">
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-empty"><i class="fas fa-star"></i></li>
+                            <li><span>9<span> / 10</span></span>
+                            </li>
+                        </ul>
+                        <ul class="entry-meta text-center">
+                            <li><a href="#"><i class="fas fa-clock"></i>15 Mins</a></li>
+                            <li><a href="#"><i class="fas fa-user"></i>by <span>John Martin</span></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i><span>02</span> Likes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img class="card-img-top" src="https://radiustheme.com/demo/html/ranna/ranna/img/product/product3.jpg" alt="Card image cap">
+                    </figure>
+                    <div class="card-body">
+                        <p class="card-text sub-title text-center">JUICE</p>
+
+                        <h5 class="card-title text-center">Blueberry Juice with Lemon Crema.</h5>
+                        <ul class="item-rating text-center">
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-empty"><i class="fas fa-star"></i></li>
+                            <li><span>9<span> / 10</span></span>
+                            </li>
+                        </ul>
+                        <ul class="entry-meta text-center">
+                            <li><a href="#"><i class="fas fa-clock"></i>15 Mins</a></li>
+                            <li><a href="#"><i class="fas fa-user"></i>by <span>John Martin</span></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i><span>02</span> Likes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+<style>
+
+.popular-card .card-body{
+position: absolute;
+bottom:5%;
+color:white !important;
+background-color: rgba(0,0,0,0.4);
+
+
+}
+
+.popular-card .entry-meta li a {
+            color: white;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+        
+        .popular-card .entry-meta span {
+            color: white;
+        }
+        
+        .popular-card a {
+            text-decoration: none;
+        }
+        
+        .popular-card .sub-title {
+            color: white;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .popular-card figure img {
+            background-color: rgba(0,0,0,0.4);
+
+        }
+        .popular-card figure:hover img {
+            -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+        }
+</style>
+    <section class="pt-3 pb-3">
+        <div class="container">
+            <div class="section-heading heading-dark">
+                <h2 class="item-heading">POPULAR RECIPES</h2>
+            </div>
+            <div class="card-deck popular-card">
+                
+                <div class=" card" >
+                    <figure>
+                        <img class="" src="https://radiustheme.com/demo/html/ranna/ranna/img/product/product11.jpg" alt="Card image cap">
+                    </figure>
+                            <!-- <div style="position:absolute;top:0;left:0;width:100%;height:100%;background-color: rgba(0,0,0,0.4);"></div> -->
+
+                    <div class="card-body">
+                        <p class="card-text sub-title text-center">BREAKFAST</p>
+
+                        <h5 class="card-title text-center">Tomatoes Stuffed with Foie and Chanterelles.</h5>
+                        <ul class="item-rating text-center">
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-empty"><i class="fas fa-star"></i></li>
+                            <li><span>9<span> / 10</span></span>
+                            </li>
+                        </ul>
+                        <ul class="entry-meta text-center">
+                            <li><a href="#"><i class="fas fa-clock"></i>15 Mins</a></li>
+                            <li><a href="#"><i class="fas fa-user"></i>by <span>John Martin</span></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i><span>02</span> Likes</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <figure>
+                        <img class="" src="https://radiustheme.com/demo/html/ranna/ranna/img/product/product12.jpg" alt="Card image cap">
+
+                    </figure>
+                    <div class="card-body">
+                        <p class="card-text sub-title text-center">DESERT</p>
+
+                        <h5 class="card-title text-center">Pumpkin Cheesecake With GingersnapCrust.</h5>
+                        <ul class="item-rating text-center">
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-empty"><i class="fas fa-star"></i></li>
+                            <li><span>9<span> / 10</span></span>
+                            </li>
+                        </ul>
+                        <ul class="entry-meta text-center">
+                            <li><a href="#"><i class="fas fa-clock"></i>15 Mins</a></li>
+                            <li><a href="#"><i class="fas fa-user"></i>by <span>John Martin</span></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i><span>02</span> Likes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img class="" src="https://radiustheme.com/demo/html/ranna/ranna/img/product/product13.jpg" alt="Card image cap">
+                    </figure>
+                    <div class="card-body">
+                        <p class="card-text sub-title text-center">JUICE</p>
+
+                        <h5 class="card-title text-center">Blueberry Juice with Lemon Crema.</h5>
+                        <ul class="item-rating text-center">
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-fill"><i class="fas fa-star"></i></li>
+                            <li class="star-empty"><i class="fas fa-star"></i></li>
+                            <li><span>9<span> / 10</span></span>
+                            </li>
+                        </ul>
+                        <ul class="entry-meta text-center">
+                            <li><a href="#"><i class="fas fa-clock"></i>15 Mins</a></li>
+                            <li><a href="#"><i class="fas fa-user"></i>by <span>John Martin</span></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i><span>02</span> Likes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <style>
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .footer-section {
+            background: #151414;
+            position: relative;
+        }
+        
+        .footer-cta {
+            border-bottom: 1px solid #373636;
+        }
+        
+        .single-cta i {
+            color: #ff5e14;
+            font-size: 30px;
+            float: left;
+            margin-top: 8px;
+        }
+        
+        .cta-text {
+            padding-left: 15px;
+            display: inline-block;
+        }
+        
+        .cta-text h4 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        
+        .cta-text span {
+            color: #757575;
+            font-size: 15px;
+        }
+        
+        .footer-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .footer-pattern img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 330px;
+            background-size: cover;
+            background-position: 100% 100%;
+        }
+        
+        .footer-logo {
+            margin-bottom: 30px;
+        }
+        
+        .footer-logo img {
+            max-width: 200px;
+        }
+        
+        .footer-text p {
+            margin-bottom: 14px;
+            font-size: 14px;
+            color: #7e7e7e;
+            line-height: 28px;
+        }
+        
+        .footer-social-icon span {
+            color: #fff;
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 20px;
+        }
+        
+        .footer-social-icon a {
+            color: #fff;
+            font-size: 16px;
+            margin-right: 15px;
+        }
+        
+        .footer-social-icon i {
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            line-height: 38px;
+            border-radius: 50%;
+        }
+        
+        .facebook-bg {
+            background: #3B5998;
+        }
+        
+        .twitter-bg {
+            background: #55ACEE;
+        }
+        .instagram-bg{
+            background: #ed4b5c;
+        }
+ 
+        .footer-widget-heading h3 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .footer-widget-heading h3::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -15px;
+            height: 2px;
+            width: 50px;
+            background: #ff5e14;
+        }
+        
+        .footer-widget ul li {
+            display: inline-block;
+            float: left;
+            width: 50%;
+            margin-bottom: 12px;
+        }
+        
+        .footer-widget ul li a:hover {
+            color: #ff5e14;
+        }
+        
+        .footer-widget ul li a {
+            color: #878787;
+            text-transform: capitalize;
+        }
+        
+        .subscribe-form {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .subscribe-form input {
+            width: 100%;
+            padding: 14px 28px;
+            background: #2E2E2E;
+            border: 1px solid #2E2E2E;
+            color: #fff;
+        }
+        
+        .subscribe-form button {
+            position: absolute;
+            right: 0;
+            background: #ff5e14;
+            padding: 13px 20px;
+            border: 1px solid #ff5e14;
+            top: 0;
+        }
+        
+        .subscribe-form button i {
+            color: #fff;
+            font-size: 22px;
+            transform: rotate(-6deg);
+        }
+        
+        .copyright-area {
+            background: #202020;
+            padding: 25px 0;
+        }
+        
+        .copyright-text p {
+            margin: 0;
+            font-size: 14px;
+            color: #878787;
+        }
+        
+        .copyright-text p a {
+            color: #ff5e14;
+        }
+        
+        .footer-menu li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        
+        .footer-menu li:hover a {
+            color: #ff5e14;
+        }
+        
+        .footer-menu li a {
+            font-size: 14px;
+            color: #878787;
+        }
+    </style>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>4th Avenue, alwarpet, chennai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9845334534</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@opesgroups.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>JK Restaurant</h3>
+                            </div>
+                            <!-- <div class="footer-logo">
+                          <a href="#"><img src="#" class="img-fluid" alt="Jaky Restaurant"></a>
+                      </div> -->
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Category</a></li>
+                                <li><a href="#">About</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2020, All Right Reserved <a href="https://opesgroups.com">opesgroups.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Category</a></li>
+                                <li><a href="#">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<!-- jQuery and JS bundle w/ Popper.js -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>
